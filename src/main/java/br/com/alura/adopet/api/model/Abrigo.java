@@ -24,8 +24,8 @@ public class Abrigo {
 
     public Abrigo(CadastroAbrigoDto dto) {
         this.nome = dto.nome();
-        this.telefone = getTelefone();
-        this.email = getEmail();
+        this.telefone = dto.telefone();
+        this.email = dto.email();
     }
 
     @Override
